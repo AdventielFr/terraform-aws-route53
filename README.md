@@ -32,7 +32,7 @@ Show terraform files
 
 `````
 module "dns" {
-  source  = "github.com/gwendallg/terraform-aws-route53"
+  source  = "git::https://github.com/AdventielFr/terraform-aws-route53.git?ref=1.0.0"
   version = "v1.0.0"
 
   domain_name = "${var.domain_name}"
@@ -43,8 +43,7 @@ module "dns" {
 
 `````
 module "dns" {
-  source  = "github.com/gwendallg/terraform-aws-route53"
-  version = "v1.0.0"
+  source  = "git::https://github.com/AdventielFr/terraform-aws-route53.git?ref=1.0.0"
   domain_name = "${var.domain_name}"
   vpc_id = "vpc-08543dc6bb8xxxxxx"
 }
