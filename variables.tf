@@ -2,10 +2,9 @@
 # Custom variables
 #----------------------------
 
-
 variable "domain_name" {
   description = "The domain name"
-  type        = "string"
+  type        = string
 }
 variable "force_destroy" {
   description = "Whether to destroy all records (possibly managed outside of Terraform) in the zone when destroying the zone."
